@@ -1,7 +1,8 @@
 # Gorlami
 Antonio Gorlami
 
-*Topology:*
+**Topology:**
+
 WG LAN: 100.100.100.0/29
 WG PORT: 99999 (Not actually a usable port)
 
