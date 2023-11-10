@@ -1,0 +1,4 @@
+100.100.100.0/29 dev wg0 proto kernel scope link src 100.100.100.2
+169.169.169.169 via 192.168.1.1 dev eth0
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.180
+192.168.2.0/24 dev eth0 proto kernel scope link src 192.168.2.1
