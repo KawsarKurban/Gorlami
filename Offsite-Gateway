@@ -1,0 +1,11 @@
+[Interface]
+Address = 10.7.5.1/29
+ListenPort = <>
+PrivateKey = <>
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+
+[Peer]
+PublicKey = <>
+PresharedKey = <>
+AllowedIPs = 10.7.5.2/32, 192.168.1.0/24, 192.168.2.0/24
