@@ -1,5 +1,5 @@
 [Interface]
-Address = 10.7.5.2/29
+Address = 100.100.100.2/29
 PrivateKey = <>
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
@@ -7,5 +7,5 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -
 [Peer]
 PublicKey = <>
 PresharedKey = <>
-Endpoint = xxx.xxx.xxx.xxx:31337
-AllowedIPs = 10.7.5.1/32, 0.0.0.0/0
+Endpoint = 169.169.169.169:31337
+AllowedIPs = 100.100.100.1/32, 0.0.0.0/0
