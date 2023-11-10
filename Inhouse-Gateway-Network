@@ -1,6 +1,6 @@
 iface eth0 inet static
         address 192.168.1.180/24
-        gateway 10.7.5.1
+        gateway 100.100.100.1
         dns-nameservers 8.8.8.8
 
 auto eth0:0
